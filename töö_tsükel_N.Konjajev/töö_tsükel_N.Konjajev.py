@@ -2,7 +2,24 @@
 from math import *
 from random import *
 
-
+#11 ülesane
+print("Arvuti mõistatab numbrit 1-10 ja sina üritad seda ära arvata.")
+a=randint(1,10)
+vastus=int(input("mis arv on mõistatanud arvutit?: "))
+k=1
+while vastus!=a:
+    print("Ära sa ei arvanud ära, proovi uuesti!: ")
+    vastus=int(input("Sisesta vastus: "))
+    k+=1
+    if k>2: 
+        print("Püüdlused on lõppenud")      
+        print("Proovi veel kord")
+        k=1
+        continue
+while True: 
+     print("Palju õnne, sa arvasid ära!",k )
+     break
+print()
 
 #Mõtle ise välja ülesanne, mis on vaja lahendada while tingimusega/while True/for kasutades. Lahenda nii while kui ka for abil.
 while True:
@@ -51,24 +68,6 @@ else:
     print("nagemist")
 print()
 
-
-
-#11 ülesane
-print("Arvuti mõistatab numbrit 1-10 ja sina üritad seda ära arvata.")
-a=randint(1,10)
-vastus=int(input("mis arv on mõistatanud arvutit?: "))
-k=1
-while vastus!=a:
-    print("Ära sa ei arvanud ära, proovi uuesti!: ")
-    vastus=int(input("Sisesta vastus: "))
-    k+=1
-    if k>2: 
-        print("Püüdlused on lõppenud")      
-        break
-while True: 
-     print("Palju õnne, sa arvasid ära!",k )
-     break
-print()
 
 
 #1 ülessane 6
