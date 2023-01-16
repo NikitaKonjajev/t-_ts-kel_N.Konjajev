@@ -1,6 +1,38 @@
 #Ülesanne 11 Arvamismäng
 from math import *
 from random import *
+#1
+p=0
+while True:
+    number= int(input("Sisestage number suurem kui 10: "))
+    p+=1
+    if number >= 10:
+        print("Õigest")
+        break
+    else:
+        print("Arv on liiga väike",p)
+print("katsed", p)
+print
+
+#22
+print("Ma tah kommi")
+katsed=0
+while True:
+    answer=input("Tahan kommi")
+    katsed+=1
+    if answer.lower()=="kommi":
+        print(f"Teil kommid kirjutakse kulus {katsed} katse.")
+        break
+print
+
+#22.1
+katsed=0
+answer=""
+if answer.lower():
+    while answer!="komm":
+        answer=input("Taham kommi!")
+        katsed+=1
+    print(f"Katsed: {katsed}")
 
 #11 ülesane
 print("Arvuti mõistatab numbrit 1-10 ja sina üritad seda ära arvata.")
