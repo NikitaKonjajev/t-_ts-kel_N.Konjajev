@@ -6,19 +6,23 @@ from random import *
 print("Arvuti mõistatab numbrit 1-10 ja sina üritad seda ära arvata.")
 a=randint(1,10)
 vastus=int(input("mis arv on mõistatanud arvutit?: "))
-k=1
+k=p=1
 while vastus!=a:
     print("Ära sa ei arvanud ära, proovi uuesti!: ")
     vastus=int(input("Sisesta vastus: "))
     k+=1
+    p+=1
     if k>2: 
         print("Püüdlused on lõppenud")      
-        print("Proovi veel kord")
-        k=1
-        continue
-while True: 
-     print("Palju õnne, sa arvasid ära!",k )
-     break
+        b=input("Kas proovi veel kord: ")
+        if b.upper()=="JÄH":
+            k=0
+            continue
+        else:
+            break
+if vastus==a:
+     print("Palju õnne, sa arvasid ära!",p )
+     
 print()
 
 #Mõtle ise välja ülesanne, mis on vaja lahendada while tingimusega/while True/for kasutades. Lahenda nii while kui ka for abil.
